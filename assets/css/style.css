@@ -1,0 +1,275 @@
+@font-face {
+  font-family: Santio;
+  src: url("./fonts/SANTIO/TTF/Santio-regular.ttf");
+}
+@font-face {
+  font-family: Roboto;
+  src: url("./fonts/Roboto/Roboto-Regular.ttf");
+}
+@font-face {
+  font-family: MrDafoe;
+  src: url("./fonts/Mr_Dafoe/MrDafoe-Regular.ttf");
+}
+
+@font-face {
+  font-family: Inter_Variable;
+  src: url("./fonts/Inter/Inter-VariableFont_slnt_wght.ttf");
+}
+
+/* * ---- general styling ---- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+main {
+  font-family: Santio;
+  font-weight: bold;
+  color: #fff;
+}
+
+header,
+footer {
+  font-family: Roboto;
+}
+
+/* * ---- background and page layout ---- */
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+.parallax-background,
+.overlay-image {
+  width: 1317px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax-background {
+  background-image: url("./img/cleo-topper.jpg");
+  height: 5200px;
+  background-attachment: fixed;
+  overflow: hidden;
+}
+
+.overlay-image {
+  background-image: url("./img/kid.png"), url("./img/see.png");
+  height: 980px;
+}
+
+/* * ---- header style ---- */
+
+header {
+  background-attachment: fixed;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 50px;
+  padding: 0 65px;
+}
+
+header img {
+  height: 20px;
+  width: 20px;
+  margin: 15px;
+}
+
+header a {
+  height: 30px;
+  width: 84px;
+  text-align: center;
+  color: #fff;
+  border-bottom: 1px solid #e7bc0e;
+}
+
+/* * ---- main section style ---- */
+
+/* * ---- headline style ---- */
+
+.headline {
+  height: 1181px;
+  width: 513px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+h1 {
+  font-family: Inter_Variable;
+  font-size: 66px;
+  font-weight: bold;
+  height: 720px;
+  width: 266px;
+}
+
+.scroll {
+  width: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding-left: 20px;
+  font-size: 32px;
+  color: #e7bc0e;
+}
+
+.scroll p {
+  font-family: MrDafoe;
+  height: 70px;
+  width: 300px;
+  text-align: start;
+}
+
+.scroll figure {
+  font-family: "Helvetica";
+  font-weight: bold;
+  height: 30px;
+  width: 50px;
+  padding-top: 20px;
+}
+
+/* * ---- article text style ---- */
+
+article {
+  font-size: 35.2px;
+  line-height: 49.2px;
+}
+
+.text1 {
+  color: #6bc1a3;
+  width: 490px;
+  margin: 230px 0 380px 240px;
+}
+
+.text2 {
+  color: #7eb8e1;
+  width: 790px;
+  padding-right: 300px;
+  margin-top: 200px;
+}
+
+span {
+  color: #fff;
+  background-color: #333;
+  padding-top: 4px;
+}
+
+p span {
+  font-size: 42px;
+  padding-top: 6px;
+}
+
+.border {
+  border: 1px solid #000;
+}
+
+/* * ---- stat element style ---- */
+
+.flex-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 200px;
+}
+
+.stat-icon {
+  height: 105px;
+  width: 105px;
+  margin: 20px 0;
+}
+
+.stat {
+  width: 790px;
+  height: 518px;
+}
+
+.work-stat {
+  color: #e7bc0e;
+  height: 805px;
+}
+
+.pay-stat {
+  color: #cb91b6;
+}
+
+.health-stat {
+  color: #6bc1a3;
+}
+
+.work-stat h2 {
+  font-size: 139px;
+  width: 450px;
+}
+
+.pay-stat h2 {
+  font-size: 96px;
+}
+
+.health-stat h2 {
+  font-size: 111px;
+}
+
+.stat p {
+  font-size: 52px;
+  width: 650px;
+}
+
+/* * ---- footer style ---- */
+
+h3 {
+  font-family: Inter_Variable;
+  font-size: 47px;
+  font-weight: bold;
+  height: 520px;
+  width: 350px;
+  margin: 0 0 50px 130px;
+  padding-top: 132px;
+}
+
+button {
+  font-size: 24px;
+  height: 60px;
+  width: 133px;
+  color: #fff;
+  background-color: #000;
+  border: 1px solid #fff;
+  margin: 0 0 100px 130px;
+  cursor: pointer;
+}
+
+button:hover {
+  box-shadow: 10px 10px 0 #fff;
+}
+
+footer {
+  background-color: #000;
+  width: 1317px;
+  height: 762px;
+  color: #fff;
+}
+
+footer p {
+  height: 25px;
+  text-align: center;
+  padding-bottom: 2px;
+}
+
+footer p a {
+  color: #6bc1a3;
+  text-decoration: none;
+}
+
+/* 
+- seitenbreite in figma und youtube unterschiedlich, backgroud-img nicht voll zu sehen 
+- header/top und footer sind nicht fixiert, wie scrollen nach oben bzw unten verhindern?
+- span: text innerhalb der zeilenhöhe zentrieren oder höhe background anpassen
+ */
